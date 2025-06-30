@@ -4,11 +4,8 @@ import com.back.domain.post.post.dto.PostDto;
 import com.back.domain.post.post.entity.Post;
 import com.back.domain.post.post.service.PostService;
 import com.back.global.rsData.RsData;
-<<<<<<< HEAD
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-=======
->>>>>>> GarakChoi/main
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -73,10 +70,7 @@ public class ApiV1PostController {
 
     @PostMapping
     @Transactional
-<<<<<<< HEAD
     @Operation(summary = "작성")
-=======
->>>>>>> GarakChoi/main
     public RsData<PostDto> write(@Valid @RequestBody PostWriteReqBody reqBody) {
         Post post = postService.write(reqBody.title, reqBody.content);
 
@@ -99,10 +93,7 @@ public class ApiV1PostController {
 
     @PutMapping("/{id}")
     @Transactional
-<<<<<<< HEAD
     @Operation(summary = "수정")
-=======
->>>>>>> GarakChoi/main
     public RsData<Void> modify(
             @PathVariable int id,
             @Valid @RequestBody PostModifyReqBody reqBody
