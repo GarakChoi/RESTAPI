@@ -1,9 +1,5 @@
 package com.back.global.globalExceptionHandler;
 
-<<<<<<< HEAD
-public class GlobalExceptionHandler {
-}
-=======
 import com.back.global.rsData.RsData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -66,4 +62,3 @@ public class GlobalExceptionHandler {
     }
 
 }
->>>>>>> 087a7a0 (work)
